@@ -7,4 +7,6 @@ html
     title= pageTitle + "|" + siteTitle
     link(rel="stylesheet" href="css/bootstrap.css")
   body
+    != partial("partial/_header")
     != yield
+    != partial("partial/_footer")
