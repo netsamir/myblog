@@ -7,5 +7,8 @@
     },
     "equity-risk-premium": {
         "pageTitle": "Historical Implied Equity Risk Premium"
+    },
+    "valuation": {
+        "pageTitle": "Value a Company"
     }
 }

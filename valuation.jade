@@ -1,0 +1,72 @@
+.container
+  .row.m-3.p-2
+    .col-lg-12
+      h1 Valuation Input
+  .row.m-3.p-2
+    .col-lg-12
+      form
+        .form-group.row
+          label.col-3.col-form-label Company Name
+          .col-9
+            input#company-name.form-control(type='text', placeholder='Company Name')
+        .form-group.row
+          label.col-3.col-form-label Date of valuation
+          .col-9
+            input#date-valuation.form-control(type='date')
+  .row.m-3.p-2
+    .col-lg-12
+      form
+        .form-group.row
+          label.col-3.col-form-label Country of incorporation
+          .col-9
+            input#company-name.form-control(type='text', placeholder='Country of incorporation')
+        .form-group.row
+          label.col-3.col-form-label Revenues
+          .col-3
+            input#company-name.form-control(type='number', placeholder='This Year')
+          .col-3
+            input#company-name.form-control(type='number', placeholder='Last 10K')
+          .col-3
+            input#company-name.form-control(type='number', placeholder='Year since last 10K')
+        .form-group.row
+          label.col-3.col-form-label Operating income or EBIT
+          .col-3
+            input#company-name.form-control(type='number', placeholder='This Year')
+          .col-3
+            input#company-name.form-control(type='number', placeholder='Last 10K')
+          .col-3
+            input#company-name.form-control(type='number', placeholder='Year since last 10K')
+        .form-group.row
+          label.col-3.col-form-label Interest expense
+          .col-3
+            input#company-name.form-control(type='number', placeholder='This Year')
+          .col-3
+            input#company-name.form-control(type='number', placeholder='Last 10K')
+        .form-group.row
+          label.col-3.col-form-label Book value of equity
+          .col-3
+            input#company-name.form-control(type='number', placeholder='This Year')
+          .col-3
+            input#company-name.form-control(type='number', placeholder='Last 10K')
+        .form-group.row
+          label.col-3.col-form-label Book value of debt
+          .col-3
+            input#company-name.form-control(type='number', placeholder='This Year')
+          .col-3
+            input#company-name.form-control(type='number', placeholder='Last 10K')
+        .form-group.row
+            label.col-3 Do you have R&D expenses to capitalize?
+            .col-9
+              .form-check
+                label.form-check-label
+                  input.form-check-input(type='checkbox')
+                  |  Yes
+                  small.text-muted  If you want to capitalize R&D, you have to input the numbers into the R&D worksheet.
+        .form-group.row
+            label.col-3 Do you have operating lease commitments?
+            .col-9
+              .form-check
+                label.form-check-label
+                  input.form-check-input(type='checkbox')
+                  |  Yes
+                  small.text-muted  If you have operating leases, please enter your lease commitments in the lease worksheet below and I will convert to debt
