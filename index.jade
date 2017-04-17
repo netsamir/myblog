@@ -2,9 +2,9 @@
   img(src="img/banner.jpg", class="img-fluid")
 .container
   .row.m-3.p-2
-    .col-md-12
-      h1 Welcome to your Site
-  .row
+    .col-md-12.m-3.p-2
+      h1 Always follow your instinct
+  .row.m-3.p-2
     .col-md-4
       ul
         li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -12,22 +12,54 @@
         li Vestibulum auctor dapibus neque.
     .col-md-8
       p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+  .row
+  .d-flex.flex-row-reverse
+    .col-md-4.m-3.p-2
+      each val in ['Recent Posts', 'Archives', 'Categories']
+        .card.card-block.m-3
+          h5.card-title= val
+          .list-group
+            button.list-group-item(type='button') Valuation
+            each val in ['In the bush', 'There is some', 'Animals', 'That would like to be', 'Outsite in the city']
+              button.list-group-item(type='button')= val
+          .mt-1
+            a(href="#") View More
+    .col-md-8.m-3.p-2
+      .card.m-3.p-2
+        // img.card-img-top.img-fluid(src="img/valuation.jpg")
+        .card-block
+          h4.card-title: a(href="valuation.html") A Valeant Update: Damaged Goods or Deeply Discounted Drug Company?
+          p
+            small.text-muted Posted by
+               a(href="#")  Samir Sadek
+               | on January 1, 2017 in
+               a(href="#")  Category
+          p.card-text
+            | Rats get a bad rap for fleeing sinking ships. After all, given that survival is the strongest evolutionary impulse and that rats are not high up in the food chain, why would they not? That idiom, unfortunately, is what came to mind as I took another look at Valeant, the vessel in my investment portfolio that most closely resembles a sinking ship. This is a stock that I had little interest in, during its glory days as the ultimate value investing play, but that I took first a look at, after its precipitous fall from grace in November 2015. While I stayed away from it then, I bought it in May 2016 after it had dropped another 60% and I found it cheap enough to add to my portfolio. I then compounded my losses when I doubled my holding in October 2016, arguing that while it was, at best, an indifferently managed company in a poor business, it was under priced at $14 . With the stock trading at less than $12 (and down to $10.50, as I write this post) and its biggest investor/promoter abandoning it, there is no way that I can avert my eyes any longer from this train wreck. So, here I go!
+          p: a.btn.btn-outline-primary(href='valuation.html', role='button', aria-pressed='true') Read more
+      .card.m-3.p2
+        .card-block
+          h4.card-title: a(href="equity-risk-premium.html") Historical Implied Equity Risk Premiums
+          p
+            small.text-muted Posted by
+               a(href="#")  Samir Sadek
+               | on January 1, 2017 in
+               a(href="#")  Category
+          p.card-text Information about historical return on equity
+          p: a.btn.btn-outline-primary(href='equity-risk-premium.html', role='button', aria-pressed='true') Read more
+      each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        .card.m-3.p2
+          .card-block
+            h4.card-title: a(href="blog.html")
+              | Blog
+              span= val
+            p
+              small.text-muted Posted by
+                a(href="#")  Samir Sadek
+                | on January 1, 2017 in
+                a(href="#")  Category
+            p.card-text
+              | Quid dubitas igitur mutare principia naturae? Nam ista vestra: Si gravis, brevis; Quamquam ab iis philosophiam et omnes ingenuas disciplinas habemus; Urgent tamen et nihil remittunt. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Quem si tenueris, non modo meum Ciceronem, sed etiam me ipsum abducas licebit. Isto modo ne improbos quidem, si essent boni viri. Quicquid porro animo cernimus, id omne oritur a sensibus;
+              p: a.btn.btn-outline-primary(href='equity-risk-premium.html', role='button', aria-pressed='true') Read more
 
-  .d-flex.flex-wrap
-    .col-md-4
-      h3: a(href="valuation.html") Valuation
-      p Your Valuation
-      p: a.btn.btn-outline-primary(href='valuation.html', role='button', aria-pressed='true') Read more
-    .col-md-4
-      h3: a(href="equity-risk-premium.html") Historical Implied Equity Risk Premiums
-      p Historical Implied Equity Risk Premiums for the US
-      p: a.btn.btn-outline-primary(href='blog.html', role='button', aria-pressed='true') Read more
-    each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-      .col-md-4
-        h3: a(href="blog.html") Blog Title
-        p
-          small Posted by Samir in June 2017
-        p if domain is specified, sets the domain to the specified array of values. The first element in domain will be mapped to the first point, the second domain value to the second point, and so on. Domain values are stored internally in a map from stringified value to index; the resulting index is then used to determine the point. Thus, a point scale’s values must be coercible to a string, and the stringified version of the domain value uniquely identifies the corresponding point. If domain is not specified, this method returns the current domain.
-        small= val
-        p: a.btn.btn-outline-primary(href='blog.html', role='button', aria-pressed='true') Read more
-    != partial("partial/_mailing-list")
+  != partial("partial/_mailing-list")
