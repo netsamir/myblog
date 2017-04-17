@@ -4,5 +4,8 @@
     },
     "blog": {
         "pageTitle": "Blog"
+    },
+    "equity-risk-premium": {
+        "pageTitle": "Historical Implied Equity Risk Premium"
     }
 }
