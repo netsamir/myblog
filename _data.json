@@ -2,6 +2,9 @@
     "index": {
         "pageTitle": "Home"
     },
+    "contact": {
+        "pageTitle": "Contact"
+    },
     "blog": {
         "pageTitle": "Blog"
     },

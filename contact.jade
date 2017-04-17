@@ -1,0 +1,29 @@
+.container
+  .row.m-3.p-2
+    .col-md-12
+      h1 Contact
+  .row.m-3.p-2
+    .col-md-6
+      form
+        fieldset.form-group
+          label E-mail
+          input.form-control(type="email", placeholder="Enter your email")
+          small.text-muted We'll never share your email with anyone else.
+        fieldset.form-group
+          label Name
+          input.form-control(type="text", placeholder="Name")
+        fieldset.form-group
+          label Message
+          textarea.form-control(row=3)
+        button.btn.btn-primary(type="submit") Submit
+    .offset-md-2.col-md-4
+      .card
+        .card-header Address and Phone
+        .card-block
+          ul.list-unstyled
+            li Element 83
+            li Suite 2, International House,
+            li Naxxar Road, San Gwann
+            li SGN 9032
+            li Malta
+            li +356 79 222 969
