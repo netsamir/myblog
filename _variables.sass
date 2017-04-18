@@ -1,4 +1,4 @@
-// colour palette 
+// colour palette
 
 @black: #000;
 @dark-grey: #333;
@@ -24,55 +24,42 @@
 @navy1: #34495e;
 @navy2: #2c3e50;
 
-// background colours 
+// background colours
 @primary-background: @white;
 @secondary-background: @off-white;
 @third-background: @light-grey;
 @fourth-background: @grey;
 @inverse-background: @dark-grey;
 
-// text colours 
+// text colours
 @primary-text: @dark-grey;
 @light-text: @light-grey;
 @loud-text: @black;
 @inverse-text: @white;
 @heading-text: @dark-grey;
 
-// link colours 
+// link colours
 @primary-link-color: @blue1;
 @primary-link-color-hover: @blue2;
 
-// primary border properties 
+// primary border properties
 @border-color: @light-grey;
 @border-size: 1px;
 @border-type: solid;
 @border-focus: @grey;
 @secondary-border-color: @blue1;
 
-// typography 
+// typography
 @body-copy: "Helvetica Neue", helvetica, arial, verdana, sans-serif;
 @heading-copy: "Helvetica Neue", helvetica, arial, verdana, sans-serif;
 @heading-copy-bold: "Helvetica Neue", helvetica, arial, verdana, sans-serif;
 @base-font-size: 14px;
 @font-size: 1em;
-@base-line-height: 1.5; 
+@base-line-height: 1.5;
 
-// layout 
+// layout
 @margin: 1em;
 @padding: 1em;
 
 // MIXINS
 
-// round corners or Border radius
-.round-corners (@radius: 2px) {
-  -moz-border-radius: @radius;
-  -ms-border-radius: @radius;
-  border-radius: @radius;
-}
-
-// animation transitions
-.transition (@transition: background .1s linear) {
-  -moz-transition: @transition;
-  -webkit-transition: @transition;
-  transition: background @transition;
-}
