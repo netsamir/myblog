@@ -88,8 +88,19 @@
 
 
 // Colors
-//
+// Custom colors
+
+$primary-color-dark:   #D32F2F;
+$primary-color:        #F44336;
+$primary-color-light:  #FFCDD2;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #009688;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
 // Grayscale and brand colors for use across Bootstrap.
+
 
 // Start with assigning color names to specific hex values.
 $white:  #fff !default;
@@ -111,7 +122,7 @@ $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             $blue !default;
+$brand-primary:             $primary-color-dark;
 $brand-success:             $green !default;
 $brand-info:                $teal !default;
 $brand-warning:             $orange !default;
