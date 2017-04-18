@@ -1,0 +1,199 @@
+@import components/variables
+
+body
+  padding-top: 5rem
+
+p
+  color: #7f8c8d
+
+footer
+  padding-top: 40px
+  padding-bottom: 40px
+  margin-top: 40px
+  border-top: 1px solid #eee
+
+.new-project
+  height: 500px
+  margin-bottom: 30px
+  border-bottom: 1px solid rgba(70,26,24,0.1)
+
+.last
+  border-bottom: none
+
+.intro
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-bottom: 40px
+
+.title
+  font-family: Raleway, serif
+  font-weight: normal
+  text-align: center
+  line-height: 2
+  padding-bottom: 30px
+
+.sub-title
+  font-size: 90%
+  margin-top: -30px
+
+// Clown project
+.clown
+  position: relative
+  margin: 2px auto
+  width: 100%
+  height: 10rem
+  border-radius: 5px
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4)
+  cursor: pointer
+  transition: all ease-in-out 300ms
+
+  &:hover
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2)
+    transform: translate(0px, -10px) scale(1.2)
+
+// Stats project
+.stats
+  width: 100%
+  height: auto
+  padding-bottom: 10px
+  display: flex
+
+.color
+  height: 30px
+
+.color > input
+  width: 100px
+
+.label
+  height: 30px
+  width: 50%
+  text-align: right
+  padding-right: 10px
+
+.percentage
+  height: 30px
+  width: 50%
+  position: relative
+  background-color: transparent
+
+.percentage > span
+  position: absolute
+  background-color: #3d9970
+  text-align: right
+  color: white
+  cursor: pointer
+
+.percentage-1
+  width: 4.2% * 3
+
+.percentage-2
+  width: 11.1% * 3
+
+.percentage-3
+  width: 4.3% * 3
+
+.percentage-4
+  width: 4.0% * 3
+
+.percentage-5
+  width: 9.4% * 3
+
+.percentage-6
+  width: 35.1% * 3
+
+.percentage-7
+  width: 31.8% * 3
+
+.flex-wrapper
+  border: 5px solid lightcoral
+  height: 300px
+  display: flex
+  justify-content: space-between
+  // align-content: center
+  // flex-direction: column | column-reverse | row-reverse
+  // flex-wrap: nowrap | wrap | wrap-reverse
+  // justify-content: flex-end | flex-start | center | space-between | space-around
+  // align-items: flex-start | flex-end | center | strech (there should be no
+  // height fixed) | baseline
+  // align-content: stretch| center | flex-start | flex-end | space-around |
+  // space between
+
+.item
+  width: 50px
+  //height: 50px
+  margin: 5px
+  background-color: DeepSkyBlue
+  color: white
+  text-align: center
+  // flex-grow: 1
+  // line-height: 50px
+  // order:
+  // flex-grow
+  // flex-shrink
+  // flex-basis
+  // flex is the shotcut for grow shrink basis
+  // align-self:
+
+// .item:nth-child(2)
+//   flex-grow: 2
+
+//
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active
+  transition: all .3s ease
+
+.slide-fade-leave-active
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0)
+
+.slide-fade-enter, .slide-fade-leave-to
+  transform: translateX(10px)
+  opacity: 0
+
+// CSS Animation
+.bounce-enter-active
+  animation: bounce-in .5s
+
+.bounce-leave-active
+  animation: bounce-out .5s
+
+@keyframes bounce-in
+  0%
+    transform: scale(0)
+  50%
+    transform: scale(1.5)
+  100%
+    transform: scale(1)
+
+@keyframes bounce-out
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.5)
+  100%
+    transform: scale(0)
+
+.frame
+  position: relative
+  height: 300px
+  padding-top: 50px
+
+.sambtn
+  position: absolute
+  top: 65px
+  right: 0
+  font-family: 'Rock Salt', cursive
+  background-color: transparent
+  height: 50px
+  border-radius: 4px
+  border: 1px solid #c0c8c9
+  padding: 15px 30px
+  cursor: pointer
+
+.effect
+  font-family: 'Monoton', cursive
+  transform-origin: top left
+  font-size: 40px
+  color: #CEAF3E
+
