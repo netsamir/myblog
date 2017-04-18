@@ -3,7 +3,7 @@
 .container
   .row.m-3.p-2
     .col-md-12.m-3.p-2
-      h1 Always follow your instinct
+      h1 Follow your instinct
   .row.m-3.p-2
     .col-md-4
       ul
@@ -26,9 +26,9 @@
             a(href="#") View More
     .col-md-8.m-3.p-2
       .card.m-3.p-2
-        // img.card-img-top.img-fluid(src="img/valuation.jpg")
+        img.card-img-top.img-fluid(src="img/ValeantMarch2017.png")
         .card-block
-          h4.card-title: a(href="valuation.html") A Valeant Update: Damaged Goods or Deeply Discounted Drug Company?
+          h4.card-title: a(href="valeant.html") A Valeant Update: Damaged Goods or Deeply Discounted Drug Company?
           p
             small.text-muted Posted by
                a(href="#")  Samir Sadek
@@ -36,7 +36,7 @@
                a(href="#")  Category
           p.card-text
             | Rats get a bad rap for fleeing sinking ships. After all, given that survival is the strongest evolutionary impulse and that rats are not high up in the food chain, why would they not? That idiom, unfortunately, is what came to mind as I took another look at Valeant, the vessel in my investment portfolio that most closely resembles a sinking ship. This is a stock that I had little interest in, during its glory days as the ultimate value investing play, but that I took first a look at, after its precipitous fall from grace in November 2015. While I stayed away from it then, I bought it in May 2016 after it had dropped another 60% and I found it cheap enough to add to my portfolio. I then compounded my losses when I doubled my holding in October 2016, arguing that while it was, at best, an indifferently managed company in a poor business, it was under priced at $14 . With the stock trading at less than $12 (and down to $10.50, as I write this post) and its biggest investor/promoter abandoning it, there is no way that I can avert my eyes any longer from this train wreck. So, here I go!
-          p: a.btn.btn-outline-primary(href='valuation.html', role='button', aria-pressed='true') Read more
+          p: a.btn.btn-outline-primary(href='valeant.html', role='button', aria-pressed='true') Read more
       .card.m-3.p2
         .card-block
           h4.card-title: a(href="equity-risk-premium.html") Historical Implied Equity Risk Premiums
@@ -47,6 +47,16 @@
                a(href="#")  Category
           p.card-text Information about historical return on equity
           p: a.btn.btn-outline-primary(href='equity-risk-premium.html', role='button', aria-pressed='true') Read more
+      .card.m-3.p2
+        .card-block
+          h4.card-title: a(href="valuation.html") Valuation: template
+          p
+            small.text-muted Posted by
+               a(href="#")  Samir Sadek
+               | on January 1, 2017 in
+               a(href="#")  Category
+          p.card-text Information about historical return on equity
+          p: a.btn.btn-outline-primary(href='valuation.html', role='button', aria-pressed='true') Read more
       each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         .card.m-3.p2
           .card-block
@@ -62,4 +72,16 @@
               | Quid dubitas igitur mutare principia naturae? Nam ista vestra: Si gravis, brevis; Quamquam ab iis philosophiam et omnes ingenuas disciplinas habemus; Urgent tamen et nihil remittunt. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Quem si tenueris, non modo meum Ciceronem, sed etiam me ipsum abducas licebit. Isto modo ne improbos quidem, si essent boni viri. Quicquid porro animo cernimus, id omne oritur a sensibus;
               p: a.btn.btn-outline-primary(href='equity-risk-premium.html', role='button', aria-pressed='true') Read more
 
+  nav.mt-3
+    ul.pagination.justify-content-center
+      li.page-item.disabled
+        a.page-link(href="#") Older Posts
+      li.page-item
+        a.page-link(href="#") 1
+      li.page-item
+        a.page-link(href="#") 2
+      li.page-item
+        a.page-link(href="#") 3
+      li.page-item
+        a.page-link(href="#") Newer Posts
   != partial("partial/_mailing-list")
