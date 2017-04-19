@@ -92,12 +92,11 @@
 
 // Custom
 
-$color1: rgba(43, 45, 66, 1);
-$color2: rgba(141, 153, 174, 1);
-$color3: rgba(237, 242, 244, 1);
-$color4: rgba(239, 35, 60, 1);
-$color5: rgba(217, 4, 41, 1);
-
+$gunmetal: rgba(43, 45, 66, 1);
+$gray-blue: rgba(141, 153, 174, 1);
+$anti-flash-white: rgba(237, 242, 244, 1);
+$red-pantone: rgba(239, 35, 60, 1);
+$medium-candy-apple-red: rgba(217, 4, 41, 1);
 // Grayscale and brand colors for use across Bootstrap.
 
 // Start with assigning color names to specific hex values.
@@ -356,7 +355,8 @@ $btn-focus-box-shadow:           0 0 0 2px rgba($brand-primary, .25) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
 
 $btn-primary-color:              $white !default;
-$btn-primary-bg:                 $brand-primary !default;
+// $btn-primary-bg:                 $brand-primary !default;
+$btn-primary-bg:                 $red-pantone !default;
 $btn-primary-border:             $btn-primary-bg !default;
 
 $btn-secondary-color:            $gray-dark !default;
