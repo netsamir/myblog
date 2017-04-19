@@ -1,11 +1,15 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no"><meta http-equiv="x-ua-compatible" content="ie=edge"><title>Value a Company|Site Title</title><link rel="stylesheet" href="css/theme.css"><link rel="stylesheet" href="css/vendor/animate.css"></head><body><nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no"><meta http-equiv="x-ua-compatible" content="ie=edge"><title>Value a Company|Site Title</title><link rel="stylesheet" href="css/vendor/bootstrap.min.css"><link rel="stylesheet" href="css/theme.css"><link rel="stylesheet" href="css/vendor/animate.css"></head><body><nav class="navbar navbar-toggleable-md navbar-light bg-faded">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="index.html">Navbar</a>
+
+  <a class="navbar-brand p-4" href="index.html">
+    <div class="wrap-logo">
+      <img src="img/octopus.png" class="e83-logo" alt=""> E83</a>
+    </div>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto p-2">
       <li class="nav-item active">
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
@@ -16,11 +20,9 @@
         <a class="nav-link" href="contact.html">Contact</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
+
+
 </nav>
 <div class="container"><div class="row m-3 p-2"><div class="col-lg-12"><h1>Valuation Input</h1></div></div><div class="row m-3 p-2"><div class="col-lg-12"><form><div class="form-group row"><label class="col-3 col-form-label">Company Name</label><div class="col-9"><input id="company-name" type="text" placeholder="Company Name" class="form-control"></div></div><div class="form-group row"><label class="col-3 col-form-label">Date of valuation</label><div class="col-9"><input id="date-valuation" type="date" class="form-control"></div></div></form></div></div><div class="row m-3 p-2"><div class="col-lg-12"><form><div class="form-group row"><label class="col-3 col-form-label">Country of incorporation</label><div class="col-9"><input id="company-name" type="text" placeholder="Country of incorporation" class="form-control"></div></div><div class="form-group row"><label class="col-3 col-form-label">Revenues</label><div class="col-3"><input id="company-name" type="number" placeholder="This Year" data-toggle="tooltip" data-placement="top" title="Enter the revenues from the most recent period (you can either use annual or the trailing 12 months). If your company had no revenues, enter a very small positive number. (You need a base for your growth rate)" class="form-control"></div><div class="col-3"><input id="company-name" type="number" placeholder="Last 10K" class="form-control"></div><div class="col-3"><input id="company-name" type="number" placeholder="Year since last 10K" class="form-control"></div></div><div class="form-group row"><label class="col-3 col-form-label">Operating income or EBIT</label><div class="col-3"><input id="company-name" type="number" placeholder="This Year" class="form-control"></div><div class="col-3"><input id="company-name" type="number" placeholder="Last 10K" class="form-control"></div><div class="col-3"><input id="company-name" type="number" placeholder="Year since last 10K" class="form-control"></div></div><div class="form-group row"><label class="col-3 col-form-label">Interest expense</label><div class="col-3"><input id="company-name" type="number" placeholder="This Year" class="form-control"></div><div class="col-3"><input id="company-name" type="number" placeholder="Last 10K" class="form-control"></div></div><div class="form-group row"><label class="col-3 col-form-label">Book value of equity</label><div class="col-3"><input id="company-name" type="number" placeholder="This Year" class="form-control"></div><div class="col-3"><input id="company-name" type="number" placeholder="Last 10K" class="form-control"></div></div><div class="form-group row"><label class="col-3 col-form-label">Book value of debt</label><div class="col-3"><input id="company-name" type="number" placeholder="This Year" class="form-control"></div><div class="col-3"><input id="company-name" type="number" placeholder="Last 10K" class="form-control"></div></div><div class="form-group row"><label class="col-3">Do you have R&D expenses to capitalize?</label><div class="col-9"><div class="form-check"><label class="form-check-label"><input type="checkbox" class="form-check-input"> Yes<small class="text-muted"> If you want to capitalize R&D, you have to input the numbers into the R&D worksheet.</small></label></div></div></div><div class="form-group row"><label class="col-3">Do you have operating lease commitments?</label><div class="col-9"><div class="form-check"><label class="form-check-label"><input type="checkbox" class="form-check-input"> Yes<small class="text-muted"> If you have operating leases, please enter your lease commitments in the lease worksheet below and I will convert to debt</small></label></div></div></div></form></div></div></div><div class="container"><div class="row"><div class="col-lg-12">This is your footer</div></div></div><!-- Bootstrap core JavaScript--><!-- ==================================================--><!-- Placed at the end of the document so the pages load faster--><script src="js/vendor/jquery-3.1.1.slim.min.js"></script><script src="js/vendor/tether.min.js"></script><script src="js/vendor/bootstrap.min.js"></script><script>$(function () {
   $('[data-toggle="tooltip"]').tooltip()
