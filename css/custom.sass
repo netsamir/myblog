@@ -8,37 +8,31 @@ $anti-flash-white: rgba(237, 242, 244, 1)
 $red-pantone: rgba(239, 35, 60, 1)
 $medium-candy-apple-red: rgba(217, 4, 41, 1)
 
-// font-family: 'Permanent Marker', cursive
-// font-family: 'Audiowide', cursive
-// font-family: 'Rock Salt', cursive
-// font-family: 'Monoton', cursive
-// font-family: 'Revalia', cursive
-// font-family: 'Frijole', cursive
+// Fonts
+
+$perm-marker-font-family: 'Permanent Marker', cursive
+$perm-audiowide-font-family: 'Audiowide', cursive
+$perm-rock-salt-font-family: 'Rock Salt', cursive
+$monoton-font-family: 'Monoton', cursive
+$revalia-font-family: 'Revalia', cursive
+$frijole-font-family: 'Frijole', cursive
+
 
 // Navbar
 
-.navbar
+.bg-faded
   background-color: $anti-flash-white
-  font-family: 'Frijole', cursive
-
-.navbar-light
-  .navbar-brand
-    color: $medium-candy-apple-red
-    font-size: 40px
-
-.navbar-nav
-  font-family: 'Revalia', cursive
-  color: $gunmetal
 
 .wrap-logo
   position: relative
+  font-family: 'Frijole', cursive
+  color: $medium-candy-apple-red
+  font-size: 40px
 
 .e83-logo
   position: absolute
-  top: 50px
-
-.navbar-light .navbar-nav .nav-link
-  color: black
+  top: 40px
+  z-index: 100
 
 // Showcase
 #showcase
@@ -47,3 +41,4 @@ $medium-candy-apple-red: rgba(217, 4, 41, 1)
 
 #showcase .btn-primary
   background-color: $gray-blue
+
